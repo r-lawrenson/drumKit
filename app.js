@@ -1,4 +1,6 @@
 document.addEventListener("keydown", (event) => {
+
+    let keyDownClick = ""
     let keyNumber = event.key
     let key1 = document.getElementById("boom");
     let key2 = document.getElementById("clap");
@@ -7,9 +9,10 @@ document.addEventListener("keydown", (event) => {
     if (keyNumber == 1) {
         // hmm how do you restart the audio everytime the key is pressed?
 
-        key1.pause()
-        key1.currentTime = 0 // CAPITAL T!! tada moment...
-        key1.play()
+        keyDownClick = key1
+        keyDownClick.pause()
+        keyDownClick.currentTime = 0 // CAPITAL T!! tada moment...
+        keyDownClick.play()
 
         // playSound()
 
