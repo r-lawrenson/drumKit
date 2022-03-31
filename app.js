@@ -5,9 +5,16 @@ document.addEventListener("keydown", (event) => {
     // keyPressed.innerHTML = keyNumber
     
     if (keyNumber == 1) {
-        key1.play()
+        // hmm how do you restart the audio everytime the key is pressed?
+
+        playSound()
     } else {}
 
 })
 
 
+function playSound() {
+    key1.pause()
+    key1.currentTime = 0 // CAPITAL T!! tada moment...
+    key1.play()
+}
