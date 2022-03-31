@@ -1,7 +1,7 @@
 document.addEventListener("keydown", (event) => {
     let keyNumber = event.key
-    let key1 = document.getElementById("key1");
-    let key2 = document.getElementById("key2");
+    let key1 = document.getElementById("boom");
+    let key2 = document.getElementById("clap");
     // keyPressed.innerHTML = keyNumber
     
     if (keyNumber == 1) {
@@ -12,7 +12,7 @@ document.addEventListener("keydown", (event) => {
         key1.play()
 
         // playSound()
-        
+
     } else if (keyNumber = 2) {
         key2.pause()
         key2.currentTime = 0 // CAPITAL T!! tada moment...
