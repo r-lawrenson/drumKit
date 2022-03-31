@@ -4,11 +4,10 @@ document.addEventListener("keydown", (event) => {
 
     // keyPressed.innerHTML = keyNumber
     
-
+    if (keyNumber == 1) {
+        key1.play()
+    } else {}
 
 })
 
-if (keyNumber == 1) {
-    key1.play()
-} else {}
 
