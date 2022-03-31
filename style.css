@@ -5,9 +5,11 @@
 
 }
 
-.button{
+.keyBox{
     border: 1px solid black;
     height: 50px;
     width: 50px;
-
+    display: flex;
+    
+    column-gap: 20px;
 }
