@@ -26,32 +26,24 @@ document.addEventListener("keydown", (event) => {
 function checkIf() {
     if (keyPressClick == 1) {
         audioFile = key1
-        playSound();
     } else if (keyPressClick == 2) {
         audioFile = key2
-        playSound();
     } else if (keyPressClick == 3) {
         audioFile = key3
-        playSound();
     } else if (keyPressClick == 4) {
         audioFile = key4
-        playSound();
     } else if (keyPressClick == 5) {
         audioFile = key5
-        playSound();
     } else if (keyPressClick == 6) {
         audioFile = key6
-        playSound();
     } else if (keyPressClick == 7) {
         audioFile = key7
-        playSound();
     } else if (keyPressClick == 8) {
         audioFile = key8
-        playSound();
     } else if (keyPressClick == 9) {
         audioFile = key9
-        playSound();
     }
+    playSound();
     clearVars()
 };
 
