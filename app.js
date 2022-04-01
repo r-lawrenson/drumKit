@@ -1,6 +1,6 @@
 let audioFile = "";
 let keyPressClick = "";
-// place var outside eventListener for function to access
+
 let key1 = document.getElementById("boom");
 let key2 = document.getElementById("clap");
 let key3 = document.getElementById("hihat");
@@ -13,13 +13,13 @@ let key9 = document.getElementById("tom");
 
 document.addEventListener("click", (event) => {
     click = (event.target);
-    keyPressClick = click.id // really?
+    keyPressClick = click.id
     checkIf()
 });
 
 document.addEventListener("keydown", (event) => {
     let keyDown = event.key
-    keyPressClick = keyDown // send to outside variable
+    keyPressClick = keyDown
     checkIf(); 
 });
 
@@ -56,7 +56,6 @@ function checkIf() {
 };
 
 function playSound() {
-    audioFile.pause()
     audioFile.currentTime = 0
     audioFile.play()
 };
