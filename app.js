@@ -1,3 +1,4 @@
+// audio file as variable and use if statement to play audio file
 let audioFile = "";
 let keyPressClick = "";
 
@@ -12,18 +13,18 @@ let key8 = document.getElementById("tink");
 let key9 = document.getElementById("tom");
 
 document.addEventListener("click", (event) => {
-    click = (event.target);
-    keyPressClick = click.id
+    let click = (event.target);
+    keyPressClick = click.id;
     checkIf()
 });
 
 document.addEventListener("keydown", (event) => {
-    let keyDown = event.key
-    keyPressClick = keyDown
-    checkIf(); 
+    let keyDown = event.key;
+    keyPressClick = keyDown;
+    checkIf()
 });
 
-function checkIf() {
+const checkIf = () => {
     if (keyPressClick == 1) {
         audioFile = key1
     } else if (keyPressClick == 2) {
@@ -44,15 +45,15 @@ function checkIf() {
         audioFile = key9
     }
     playSound();
-    clearVars()
+    clearVars();
 };
 
-function playSound() {
-    audioFile.currentTime = 0
-    audioFile.play()
+const playSound = () => {
+    audioFile.currentTime = 0;
+    audioFile.play();
 };
 
-function clearVars() {
+const clearVars = () => {
     audioFile = "";
     keyPressClick = "";
 };
