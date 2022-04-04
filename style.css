@@ -2,8 +2,8 @@
 body{
     background: linear-gradient(90deg, 
     rgba(2, 2, 2, 1) 0%, 
-    rgba(0, 213, 255, 0.8) 35%, 
-    rgba(0, 212, 255, 0.8) 65%, 
+    rgba(0, 213, 255, 0.9) 30%, 
+    rgba(0, 212, 255, 0.9) 70%, 
     rgba(2, 2, 2, 1) 100%);
     width: 800px;
     margin: 0 auto;
@@ -22,6 +22,7 @@ header{
 .keyBox-wrapper{
     margin-top: 100px;
     display: flex;
+    height: 300px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -44,7 +45,6 @@ header{
     padding: 5px;
     border-radius: 16px;
     background-color: rgba(129, 153, 184, 0.586);
-    align-items:baseline;
     font-size: 16px;
 }
 
@@ -53,4 +53,4 @@ header{
     background-color: rgba(176, 196, 222, 0.486);
     text-align: center;
     font-size: 40px;
-    }
+}
